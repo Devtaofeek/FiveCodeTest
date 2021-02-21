@@ -1,0 +1,327 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Api\\FiveCode.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Api\\FiveCode.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Api\\FiveCode.Api.csproj",
+        "projectName": "FiveCode.Api",
+        "projectPath": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Api\\FiveCode.Api.csproj",
+        "packagesPath": "C:\\Users\\taofeeal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\taofeeal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.AppLICATION\\FiveCode.Application.csproj": {
+                "projectPath": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.AppLICATION\\FiveCode.Application.csproj"
+              },
+              "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Data\\FiveCode.Data.csproj": {
+                "projectPath": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Data\\FiveCode.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.AppLICATION\\FiveCode.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.AppLICATION\\FiveCode.Application.csproj",
+        "projectName": "FiveCode.Application",
+        "projectPath": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.AppLICATION\\FiveCode.Application.csproj",
+        "packagesPath": "C:\\Users\\taofeeal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.AppLICATION\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\taofeeal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Domain\\FiveCode.Domain.csproj": {
+                "projectPath": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Domain\\FiveCode.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.5.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[9.5.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Data\\FiveCode.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Data\\FiveCode.Data.csproj",
+        "projectName": "FiveCode.Data",
+        "projectPath": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Data\\FiveCode.Data.csproj",
+        "packagesPath": "C:\\Users\\taofeeal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\taofeeal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.AppLICATION\\FiveCode.Application.csproj": {
+                "projectPath": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.AppLICATION\\FiveCode.Application.csproj"
+              },
+              "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Domain\\FiveCode.Domain.csproj": {
+                "projectPath": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Domain\\FiveCode.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Domain\\FiveCode.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Domain\\FiveCode.Domain.csproj",
+        "projectName": "FiveCode.Domain",
+        "projectPath": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Domain\\FiveCode.Domain.csproj",
+        "packagesPath": "C:\\Users\\taofeeal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taofeeal\\source\\repos\\FiveCodeTest\\FiveCode.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\taofeeal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

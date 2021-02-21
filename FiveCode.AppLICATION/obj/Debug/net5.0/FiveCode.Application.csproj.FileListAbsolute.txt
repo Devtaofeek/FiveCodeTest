@@ -1,0 +1,15 @@
+C:\Users\taofeeal\source\repos\FiveCodeTest\FiveCode.AppLICATION\bin\Debug\net5.0\FiveCode.Application.deps.json
+C:\Users\taofeeal\source\repos\FiveCodeTest\FiveCode.AppLICATION\bin\Debug\net5.0\FiveCode.Application.dll
+C:\Users\taofeeal\source\repos\FiveCodeTest\FiveCode.AppLICATION\bin\Debug\net5.0\ref\FiveCode.Application.dll
+C:\Users\taofeeal\source\repos\FiveCodeTest\FiveCode.AppLICATION\bin\Debug\net5.0\FiveCode.Application.pdb
+C:\Users\taofeeal\source\repos\FiveCodeTest\FiveCode.AppLICATION\obj\Debug\net5.0\FiveCode.Application.csprojAssemblyReference.cache
+C:\Users\taofeeal\source\repos\FiveCodeTest\FiveCode.AppLICATION\obj\Debug\net5.0\FiveCode.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\taofeeal\source\repos\FiveCodeTest\FiveCode.AppLICATION\obj\Debug\net5.0\FiveCode.Application.AssemblyInfoInputs.cache
+C:\Users\taofeeal\source\repos\FiveCodeTest\FiveCode.AppLICATION\obj\Debug\net5.0\FiveCode.Application.AssemblyInfo.cs
+C:\Users\taofeeal\source\repos\FiveCodeTest\FiveCode.AppLICATION\obj\Debug\net5.0\FiveCode.Application.csproj.CoreCompileInputs.cache
+C:\Users\taofeeal\source\repos\FiveCodeTest\FiveCode.AppLICATION\obj\Debug\net5.0\FiveCode.Application.dll
+C:\Users\taofeeal\source\repos\FiveCodeTest\FiveCode.AppLICATION\obj\Debug\net5.0\ref\FiveCode.Application.dll
+C:\Users\taofeeal\source\repos\FiveCodeTest\FiveCode.AppLICATION\obj\Debug\net5.0\FiveCode.Application.pdb
+C:\Users\taofeeal\source\repos\FiveCodeTest\FiveCode.AppLICATION\bin\Debug\net5.0\FiveCode.Domain.dll
+C:\Users\taofeeal\source\repos\FiveCodeTest\FiveCode.AppLICATION\bin\Debug\net5.0\FiveCode.Domain.pdb
+C:\Users\taofeeal\source\repos\FiveCodeTest\FiveCode.AppLICATION\obj\Debug\net5.0\FiveCode.Application.csproj.CopyComplete
