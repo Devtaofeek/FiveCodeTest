@@ -10,14 +10,10 @@ namespace FiveCodeTest.UnitTest
         [Test]
         public void ReturnCheapPaymentGateway_IfAmountIsLessThanTwenty()
         {
-            var gateway = new PaymentProcessor(new CheapPaymentGateway(),
-                new ExpensicePaymentGateWay(),
-                new PremiumPaymentGateway());
-            var paymentcom = new CreatePaymentCommand()
-            {
-                Amount = 15
-            };
-            var returnedtype = gateway.ProcessPayment(paymentcom);
+            var gateway = new PaymentProcessor();
+               
+          
+            var returnedtype = gateway.GetPayment(15);
 
             Assert.IsInstanceOf(typeof(CheapPaymentGateway), returnedtype);
         }
@@ -25,14 +21,10 @@ namespace FiveCodeTest.UnitTest
         [Test]
         public void ReturnExpensivePaymentGateway_IfAmountIsGreaterThanTwentyOneAndLessThanOrEqualTOFiveHundred()
         {
-            var gateway = new PaymentProcessor(new CheapPaymentGateway(),
-                new ExpensicePaymentGateWay(),
-                new PremiumPaymentGateway());
-            var paymentcom = new CreatePaymentCommand()
-            {
-                Amount = 70
-            };
-            var returnedtype = gateway.ProcessPayment(paymentcom);
+            var gateway = new PaymentProcessor();
+
+
+            var returnedtype = gateway.GetPayment(300);
 
             Assert.IsInstanceOf(typeof(ExpensicePaymentGateWay), returnedtype);
         }
@@ -40,14 +32,10 @@ namespace FiveCodeTest.UnitTest
         [Test]
         public void ReturnPremiumPaymentGateway_IfAmountIsGreaterThanFiveHundred()
         {
-            var gateway = new PaymentProcessor(new CheapPaymentGateway(),
-                new ExpensicePaymentGateWay(),
-                new PremiumPaymentGateway());
-            var paymentcom = new CreatePaymentCommand()
-            {
-                Amount = 700
-            };
-            var returnedtype = gateway.ProcessPayment(paymentcom);
+            var gateway = new PaymentProcessor();
+
+
+            var returnedtype = gateway.GetPayment(900);
 
             Assert.IsInstanceOf(typeof(PremiumPaymentGateway), returnedtype);
         }

@@ -30,20 +30,18 @@ namespace FiveCode.Application.Features.Payment.Command
         public async Task<PaymentStatus> Handle(CreatePaymentCommand request, CancellationToken cancellationToken)
         {
             _request = request;
+         var PaymentMethod  =   _paymentProcessor.GetPayment(request.Amount);
+           var result = await PaymentMethod.Pay(request.Amount);
 
-            var validator = new CreatePaymentCommandValidator();
-            var validationresult = await validator.ValidateAsync(request);
-            if (validationresult.Errors.Count > 0)
-                throw new ValidationException(validationresult);
-            _paymentProcessor.ProcessPayment(request);
             var payment = _mapper.Map<Domain.Payment>(request);
             payment.CreatedBy = "testuser";
             payment.CreatedDate = DateTime.Now;
             PaymentHistory paymenthistory = new PaymentHistory
             {
                 Payment = payment,
-                PaymentStatus = _paymentProcessor.ReturnPaymentStatus()
+                
             };
+            paymenthistory.PaymentStatus = result ? PaymentStatus.Processed : PaymentStatus.Failed;
             await _unitOfwork.PaymentHistoryRepository.AddAsync(paymenthistory);
             await _unitOfwork.complete();
             return paymenthistory.PaymentStatus;

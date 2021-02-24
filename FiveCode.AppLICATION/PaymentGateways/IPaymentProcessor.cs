@@ -6,8 +6,6 @@ namespace FiveCode.Application.PaymentGateways
 {
     public interface IPaymentProcessor
     {
-        public IPaymentGateway ProcessPayment(CreatePaymentCommand request);
-
-        public PaymentStatus ReturnPaymentStatus();
+        public IPaymentGateway GetPayment(decimal Amount);
     }
 }

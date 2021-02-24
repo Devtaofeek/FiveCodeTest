@@ -9,58 +9,28 @@ namespace FiveCode.Application.PaymentGateways
         private ICheapPaymentGateway _cheapPaymentGateWay;
         private IExpensicePaymentGateWay _expensicePaymentGateWay;
         private IPremiumPaymentGateway _premiumPaymentGateway;
-        private PaymentStatus result;
 
-        public PaymentProcessor(ICheapPaymentGateway cheapPaymentGateWay,
-            IExpensicePaymentGateWay expensicePaymentGateWay,
-            IPremiumPaymentGateway premiumPaymentGateway)
+        public PaymentProcessor()
         {
-            _cheapPaymentGateWay = cheapPaymentGateWay;
-            _expensicePaymentGateWay = expensicePaymentGateWay;
-            _premiumPaymentGateway = premiumPaymentGateway;
+            _cheapPaymentGateWay = new CheapPaymentGateway();
+            _expensicePaymentGateWay = new  ExpensicePaymentGateWay();
+            _premiumPaymentGateway = new  PremiumPaymentGateway();
         }
 
-        public IPaymentGateway ProcessPayment(CreatePaymentCommand request)
+        public IPaymentGateway GetPayment(decimal Amount)
         {
-            IPaymentGateway paymentGateway = _cheapPaymentGateWay;
-
-            switch (request.Amount)
+            switch (Amount)
             {
                 case < 20:
-                    paymentGateway = _cheapPaymentGateWay;
-                    result = paymentGateway.Pay(request);
-                    break;
-
+                   return _cheapPaymentGateWay;
                 case >= 21 and <= 500:
-                    paymentGateway = _expensicePaymentGateWay;
-                    result = paymentGateway.Pay(request);
-                    if (result == PaymentStatus.Failed)
-                    {
-                        paymentGateway = _cheapPaymentGateWay;
-                        result = paymentGateway.Pay(request);
-                    }
-                    break;
-
+                    return _expensicePaymentGateWay;
                 case > 500:
                     {
-                        paymentGateway = _premiumPaymentGateway;
-                        result = paymentGateway.Pay(request);
-                        var count = 0;
-                        while (result == PaymentStatus.Failed && count < 3)
-                        {
-                            result = paymentGateway.Pay(request);
-                            count++;
-                        }
-
-                        break;
+                       return _premiumPaymentGateway;
                     }
             }
-            return paymentGateway;
-        }
-
-        public PaymentStatus ReturnPaymentStatus()
-        {
-            return result;
+            return default;
         }
     }
 }
